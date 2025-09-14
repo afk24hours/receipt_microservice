@@ -6,11 +6,13 @@
 6. uvicorn restapi:app --reload
 
 внутри .env пишутся переменные
-TELEGRAM_TOKEN=
-TELEGRAM_CHAT_ID=
+# Telegram Bot
+TELEGRAM_TOKEN=ваш_токен_бота
+TELEGRAM_CHAT_ID=ваш_chat_id
 
-CLICKHOUSE_HOST=
-CLICKHOUSE_PORT=
-CLICKHOUSE_USER=
-CLICKHOUSE_PASSWORD=
-CLICKHOUSE_DB=
+# ClickHouse
+CLICKHOUSE_HOST=clickhouse-server
+CLICKHOUSE_PORT=8123
+CLICKHOUSE_USER=user
+CLICKHOUSE_PASSWORD=password
+CLICKHOUSE_DB=receipts
