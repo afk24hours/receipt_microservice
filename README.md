@@ -5,7 +5,7 @@
 5. docker-compose up --build
 6. uvicorn restapi:app --reload
 
-внутри .env пишутся переменные
+# внутри .env пишутся переменные
 # Telegram Bot
 TELEGRAM_TOKEN=ваш_токен_бота
 TELEGRAM_CHAT_ID=ваш_chat_id
