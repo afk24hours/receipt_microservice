@@ -1,0 +1,5 @@
+celery
+reportlab
+clickhouse-connect
+python-telegram-bot
+python-dotenv
