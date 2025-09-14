@@ -4,3 +4,13 @@
 4. Внести токены и прочие ключи в файл .env
 5. docker-compose up --build
 6. uvicorn restapi:app --reload
+
+внутри .env пишутся переменные
+TELEGRAM_TOKEN=
+TELEGRAM_CHAT_ID=
+
+CLICKHOUSE_HOST=
+CLICKHOUSE_PORT=
+CLICKHOUSE_USER=
+CLICKHOUSE_PASSWORD=
+CLICKHOUSE_DB=
