@@ -7,7 +7,12 @@
 5. docker-compose up --build
 6. uvicorn restapi:app --reload
 
-# внутри .env пишутся переменные
+7. Далее открываем http://127.0.0.1:8000/docs
+8. Делаем POST запрос в /generate_receipt через swaggerUI 
+9. Проверяете сгенерированный чек
+10. Если вы умеете создавать ботов в телеге и после создания бота, получили токен бота, свой CHAT_ID и подписались на своего бота - он пришлет вам PDF файл
+
+**внутри .env пишутся переменные**
 # Telegram Bot
 TELEGRAM_TOKEN=ваш_токен_бота
 TELEGRAM_CHAT_ID=ваш_chat_id
