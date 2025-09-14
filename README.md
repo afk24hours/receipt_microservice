@@ -1,3 +1,5 @@
+**Микросервис для генерации чека в формате pdf с последующим созданием файла в локальной папке + отправки через Telegram bot**
+
 1. git clone https://github.com/<your-username>/receipt_microservice.git
 2. cd receipt_microservice
 3. Создать .env файл
