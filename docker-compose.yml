@@ -3,8 +3,8 @@ services:
     image: rabbitmq:3-management
     container_name: rabbitmq
     ports:
-      - "5672:5672"   # основной порт RabbitMQ
-      - "15672:15672" # веб-интерфейс RabbitMQ
+      - "5672:5672"   # основной порт
+      - "15672:15672" # веб-интерфейс
     environment:
       RABBITMQ_DEFAULT_USER: guest
       RABBITMQ_DEFAULT_PASS: guest
@@ -18,7 +18,7 @@ services:
       - "8123:8123" # Adjust port as needed
     volumes:
       - clickhouse_data:/var/lib/clickhouse
-      - ./clickhouse-init:/docker-entrypoint-initdb.d  # <-- тут init.sql
+      - ./clickhouse-init:/docker-entrypoint-initdb.d 
     healthcheck:
       test: ["CMD", "curl", "-f", "http://localhost:8123/ping"]
       interval: 5s
